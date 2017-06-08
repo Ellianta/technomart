@@ -1,0 +1,278 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  color: black;
+}
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "symbols-technomart";
+  src: url("../fonts/symbols-technomart.woff") format("woff"), url("../fonts/symbols-technomart.woff2") format("woff2");
+}
+.page-header {
+  min-height: 320px;
+  padding-bottom: 60px;
+  background-color: #f1f5f7;
+  font-family: 'Cuprum', sans-serif;
+}
+.page-header__inner {
+  width: 940px;
+  padding: 0 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 44px;
+  min-height: 114px;
+}
+.page-header__description {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+  width: 200px;
+  padding: 5px 50px;
+}
+.page-header__contacts {
+  width: 300px;
+}
+.page-header__phone {
+  width: 196px;
+  height: 29px;
+  border: 3px solid white;
+  padding-top: 12px;
+  padding-left: 70px;
+  color: #e9292a;
+  font-size: 21px;
+  line-height: 18px;
+  position: relative;
+}
+.page-header__phone::before {
+  content: "\1f4de";
+  font-family: "symbols-technomart";
+  position: absolute;
+  font-size: 22px;
+  color: #b8c0c9;
+  top: 13px;
+  left: 15px;
+}
+.page-header__adress {
+  margin: 0;
+  padding: 5px 0;
+  padding-left: 10px;
+  color: #32425c;
+  font-size: 14px;
+  line-height: 24px;
+}
+.page-header__user-block {
+  width: 300px;
+  display: flex;
+  justify-content: flex-end;
+}
+.page-header__login,
+.page-header__check-in {
+  display: block;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  font-size: 21px;
+  line-height: 18px;
+  height: 20px;
+  padding: 13px 25px;
+}
+.page-header__login:hover,
+.page-header__check-in:hover {
+  color: #ee3643;
+}
+.page-header__login:focus,
+.page-header__check-in:focus {
+  color: #dcdcdc;
+}
+.page-header__login {
+  padding-left: 50px;
+  margin-right: 10px;
+  position: relative;
+}
+.page-header__login::before {
+  content: "\2386";
+  font-family: "symbols-technomart";
+  position: absolute;
+  font-size: 22px;
+  color: #c5c5c5;
+  top: 13px;
+  left: 15px;
+}
+.page-header__login:hover::before {
+  color: #32425c;
+}
+.top-menu {
+  height: 42px;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: white;
+  background-color: #293449;
+}
+.top-menu__inner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 940px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.top-menu__link {
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 18px;
+  color: white;
+  padding: 11px 0 13px;
+}
+.top-menu__logo {
+  padding: 9px 52px;
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  border-bottom: 5px solid #c72d38;
+}
+.top-menu__logo:hover {
+  background-color: #ca2c37;
+  border-color: #9a212a;
+}
+.top-menu__search {
+  width: 220px;
+  padding-left: 50px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  color: white;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  cursor: pointer;
+}
+.top-menu__search::placeholder {
+  color: white;
+}
+.top-menu__search + label {
+  position: relative;
+}
+.top-menu__search + label::before {
+  content: "\1f50d";
+  font-family: "symbols-technomart";
+  position: absolute;
+  color: #6a7180;
+  top: 12px;
+  left: -250px;
+}
+.top-menu__search:hover {
+  background-color: #212a3a;
+}
+.top-menu__search:hover + label::before {
+  color: white;
+}
+.top-menu__search:focus {
+  background-color: white;
+  color: black;
+}
+.top-menu__search:focus::placeholder {
+  color: black;
+}
+.top-menu__search:focus + label::before {
+  color: #ef4652;
+}
+.top-menu__marker {
+  width: 105px;
+  padding-left: 45px;
+  position: relative;
+}
+.top-menu__marker::before {
+  content: "\1f516";
+  font-family: "symbols-technomart";
+  position: absolute;
+  color: #6a7180;
+  top: 13px;
+  left: 18px;
+}
+.top-menu__marker:hover {
+  background-color: #212a3a;
+}
+.top-menu__marker:hover::before {
+  color: white;
+}
+.top-menu__marker:focus {
+  color: #8b8e94;
+  background-color: #161d29;
+}
+.top-menu__basket {
+  width: 100px;
+  padding-left: 50px;
+  position: relative;
+}
+.top-menu__basket::before {
+  content: "\62";
+  font-family: "symbols-technomart";
+  position: absolute;
+  color: #6a7180;
+  top: 13px;
+  left: 16px;
+}
+.top-menu__basket:hover {
+  background-color: #212a3a;
+}
+.top-menu__basket:hover::before {
+  color: white;
+}
+.top-menu__basket:focus {
+  color: #8b8e94;
+  background-color: #161d29;
+}
+.top-menu__checkout {
+  width: 110px;
+  background-color: #63a63e;
+  padding: 0 20px;
+}
+.top-menu__checkout:hover {
+  background-color: #5fbb2d;
+}
+.top-menu__checkout:focus {
+  color: #8b8e94;
+  background-color: #518534;
+}
+.main-nav {
+  width: 100%;
+  min-height: 62px;
+  background-color: #32425c;
+}
+.main-nav__list {
+  list-style: none;
+  width: 840px;
+  margin: 0;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main-nav__link {
+  display: block;
+  text-decoration: none;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
