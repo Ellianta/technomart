@@ -1,0 +1,35 @@
+.popular-goods{
+  min-height: 430px;
+   &__header{
+     background-color: #f7f3ec;
+     height: 90px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 20px;
+   }
+   &__title{
+     padding: 30px 0;
+     padding-left: 30px;
+     margin: 0;
+     .title-font();
+   }
+   &__link{
+     .link-button();
+     background-color: #ee3643;
+     border-radius: 3px;
+     width: 252px;
+     margin-right: 24px;
+     &:hover{
+       background-color: #ca2c37;
+     }
+     &:focus{
+       background-color: #ba2732;
+     }
+   }
+   &__list{
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+   }
+}
