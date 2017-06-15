@@ -42,7 +42,7 @@
   <div class="main-nav">
     <a class="main-nav__link" href="#">Главная</a>
     <a class="main-nav__link" href="#">Компания</a>
-    <a class="main-nav__link" href="#">Каталог</a>
+    <a class="main-nav__link" href="catalog.html">Каталог</a>
     <a class="main-nav__link" href="#">Новости</a>
     <a class="main-nav__link" href="#">Спецпредложения</a>
     <a class="main-nav__link" href="#">Доставка</a>
@@ -409,6 +409,47 @@
 
 
 </footer>
-
+<!-- Окно добавления в корзину -->
+<div class="modal-product">
+  <div class="modal-product__close"></div>
+  <div class="modal-product__content">
+    <img class="modal-product__image" src="img/ok.png" width="66px" height="66px" alt="OK!">
+    <p class="modal-product__info">Товар добавлен в корзину!</p>
+  </div>
+  <div class="modal-product__footer">
+    <a class="modal-product__link-buy" href="#">Оформить заказ</a>
+    <a class="modal-product__link" href="#">Продолжить покупки</a>
+  </div>
+</div>
+<!-- Всплывающая интерактивная карта  -->
+<div class="modal-map">
+  <div class="modal-map__close"></div>
+  <div class="modal-map__content">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa1f5300f685b72ba6c2a466a833b9eed6f3e8580f14999ecec7de5c9e65f3ba4&amp;width=940&amp;height=446&amp;lang=ru_RU&amp;scroll=true"></script>
+  </div>
+</div>
+<!-- Окно обратной связи -->
+<div class="modal-feedback">
+  <div class="modal-feedback__close"></div>
+  <form action="" name="feedback" method="post">
+    <div class="modal-feedback__top">
+      <label class="modal-feedback__name">
+        Ваше имя:<br>
+        <input class="modal-feedback__input" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+      </label>
+      <label class="modal-feedback__mail">
+        Ваш e-mail:<br>
+        <input class="modal-feedback__input" type="email" name="mail" placeholder="Для отправки ответа">
+      </label>
+    </div>
+    <label class="modal-feedback__content">
+      Текст письма:<br>
+      <textarea class="modal-feedback__content-area" name="content" placeholder="В свободной форме"></textarea>
+    </label>
+    <div class="modal-feedback__footer">
+      <button class="modal-feedback__btn" type="submit" name="submit">Отправить</button>
+    </div>
+  </form>
+</div>
 </body>
 </html>
