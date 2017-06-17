@@ -956,6 +956,9 @@ body {
   background-color: #32425c;
   color: white;
 }
+.serv-slider__control:hover {
+  background-color: #293449;
+}
 .serv-slider__slides {
   order: 2;
   width: 620px;
@@ -1102,6 +1105,7 @@ body {
 }
 .info-block__map {
   margin-bottom: 38px;
+  cursor: pointer;
 }
 .page-footer {
   background-color: #32425c;
@@ -1673,7 +1677,11 @@ body {
   left: 50%;
   margin-left: -310px;
   font-family: 'Cuprum', sans-serif;
+  z-index: 5;
   display: none;
+}
+.modal-product--show {
+  display: block;
 }
 .modal-product__close {
   width: 38px;
@@ -1767,7 +1775,11 @@ body {
   top: 100px;
   left: 50%;
   margin-left: -470px;
+  z-index: 5;
   display: none;
+}
+.modal-map--show {
+  display: block;
 }
 .modal-map__close {
   width: 38px;
@@ -1811,7 +1823,11 @@ body {
   font-family: 'Cuprum', sans-serif;
   font-size: 18px;
   line-height: 18px;
+  z-index: 5;
   display: none;
+}
+.modal-feedback--show {
+  display: block;
 }
 .modal-feedback__top {
   height: 113px;
